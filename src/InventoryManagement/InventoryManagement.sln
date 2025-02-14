@@ -1,0 +1,34 @@
+﻿
+Microsoft Visual Studio Solution File, Format Version 12.00
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement.API", "InventoryManagement.API\InventoryManagement.API.csproj", "{6286EE57-D3F8-46AF-B0A8-8192A8DCAA69}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement.Application", "InventoryManagement.Application\InventoryManagement.Application.csproj", "{4204F946-E26C-4CAE-BACF-7C7D0210265C}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement.Infrastructure", "InventoryManagement.Infrastructure\InventoryManagement.Infrastructure.csproj", "{6C893A65-1758-4427-A19C-493C053BACED}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "InventoryManagement.Tests", "InventoryManagement.Tests\InventoryManagement.Tests.csproj", "{5385A357-D84F-4D65-A6A4-C856D382FCC6}"
+EndProject
+Global
+	GlobalSection(SolutionConfigurationPlatforms) = preSolution
+		Debug|Any CPU = Debug|Any CPU
+		Release|Any CPU = Release|Any CPU
+	EndGlobalSection
+	GlobalSection(ProjectConfigurationPlatforms) = postSolution
+		{6286EE57-D3F8-46AF-B0A8-8192A8DCAA69}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6286EE57-D3F8-46AF-B0A8-8192A8DCAA69}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6286EE57-D3F8-46AF-B0A8-8192A8DCAA69}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6286EE57-D3F8-46AF-B0A8-8192A8DCAA69}.Release|Any CPU.Build.0 = Release|Any CPU
+		{4204F946-E26C-4CAE-BACF-7C7D0210265C}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{4204F946-E26C-4CAE-BACF-7C7D0210265C}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{4204F946-E26C-4CAE-BACF-7C7D0210265C}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{4204F946-E26C-4CAE-BACF-7C7D0210265C}.Release|Any CPU.Build.0 = Release|Any CPU
+		{6C893A65-1758-4427-A19C-493C053BACED}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{6C893A65-1758-4427-A19C-493C053BACED}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{6C893A65-1758-4427-A19C-493C053BACED}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{6C893A65-1758-4427-A19C-493C053BACED}.Release|Any CPU.Build.0 = Release|Any CPU
+		{5385A357-D84F-4D65-A6A4-C856D382FCC6}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{5385A357-D84F-4D65-A6A4-C856D382FCC6}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{5385A357-D84F-4D65-A6A4-C856D382FCC6}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{5385A357-D84F-4D65-A6A4-C856D382FCC6}.Release|Any CPU.Build.0 = Release|Any CPU
+	EndGlobalSection
+EndGlobal

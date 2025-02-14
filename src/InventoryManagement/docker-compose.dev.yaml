@@ -1,0 +1,39 @@
+services:
+  api:
+    build:
+      context: .
+      dockerfile: InventoryManagement.API/Dockerfile
+      args:
+        BUILD_CONFIGURATION: Debug
+    environment:
+      - ASPNETCORE_ENVIRONMENT=Development
+    ports:
+      - "4001:8080"
+    depends_on:
+      db:
+        condition: service_healthy
+  db:
+    image: postgres:17
+    environment:
+      POSTGRES_USER: root
+      POSTGRES_PASSWORD: root
+      POSTGRES_DB: InventoryManagement
+    ports:
+      - "4002:5432"
+    volumes:
+      - db:/var/lib/postgresql/data
+    healthcheck:
+      test: ["CMD", "pg_isready", "-d", "InventoryManagement"]
+      interval: 5s
+      timeout: 10s
+      retries: 5
+  db-migrator:
+    build:
+      context: .
+      dockerfile: InventoryManagement.API/Dockerfile.migrations
+    depends_on:
+      db:
+        condition: service_healthy
+volumes:
+  db:
+    driver: local
